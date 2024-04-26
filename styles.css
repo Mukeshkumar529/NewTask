@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #212121;
+}
+body h3{
+  color: aliceblue;
+  margin:5rem 0rem 0rem 15rem;
+  font-size: 38px;
+}
+
+.mainContainer {
+  width: 80%;
+  height: 40rem;
+  background-color: rgb(113, 4, 75);
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem 10rem 10rem;
+  border-radius: 10px;
+
+}
+
+.nav {
+  font-size: 22px;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav ul li {
+  cursor: pointer;
+  color: aliceblue;
+}
+.nav ul li:hover{
+    color: rgb(246, 11, 195);
+}
+
+
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #eaf3f7;
+  cursor: pointer;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #16e3a6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+hr {
+  margin-top: 20px;
+}
+
+.ItemContainer {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgb(61, 4, 89);
+}
+
+
+
+.cardContainer {
+  width: 100%;
+  height: 12rem;
+}
+.createContainer {
+   padding: 30px 0px 0px 10px;
+   overflow: hidden;
+}
+
+.createContainer h1 {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 20px;
+
+}
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #e7d7dd;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 22px;
+  padding-left: 15rem;
+}
+input {
+  width: 45%;
+  height: 2rem;
+  margin-left: 4rem;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+textarea {
+  width: 45%;
+  height: 3rem;
+  margin-left: 4rem;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn {
+  padding-left: 36.5rem;
+}
+
+.btnCreate {
+  width: 8rem;
+  height: 2rem;
+  background-color: rgb(13, 122, 85);
+  color: aliceblue;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btnCreate:hover {
+  background-color: rgb(20, 229, 159);
+  color: rgb(87, 7, 90);
+}
+
+.btnClear {
+  width: 8rem;
+  height: 2rem;
+  background-color: rgb(123, 6, 12);
+  color: aliceblue;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.btnClear:hover {
+  background-color: rgb(243, 44, 54);
+  color: rgb(7, 57, 90);
+}
+
+
+.ItemListContainer {
+  padding: 20px 0px 0px 140px;
+}
+.ItemListContainer h1 {
+  text-align: left;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+ 
+.ItemListCard {
+  display: flex;
+  width: 80%;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 4px;
+margin-top: 10px;
+}
+
+
+
+.ItemDetail {
+  width: 60%;
+}
+
+.ItemFunc {
+  width: 40%;
+  display: flex;
+  padding-top: 10px;
+  margin-left: 10px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.delete {
+  text-align: center;
+  color: rgb(245, 53, 53);
+}
+
+.edit {
+  text-align: center;
+  color: rgb(51, 12, 128);
+}
+
+.MasC {
+  text-align: center;
+  text-align: center;
+  color: rgb(20, 242, 172);
+}
+
+
+
+/* mark as completed */
+
+.completeContainer{
+      padding: 20px 0px 0px 140px;
+}
+.completeContainer h1 {
+  text-align: left;
+  color: aliceblue;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Application For Performing TODO Task</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h3>Web application for performing TODO Functionality.</h3>
+    <div class="mainContainer">
+      <div class="nav">
+        <ul>
+          <li id="navItem" class="underline-effect">Create Item</li>
+          <li id="navItem" class="underline-effect">Item List</li>
+          <li id="navItem" class="underline-effect">Mark as Completed List</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="ItemContainer">
+        <div class="cardContainer">
+          <div class="createContainer">
+            <h1>Create a Item</h1>
+            <div class="itemCardInput">
+              <div class="input">
+                <label for="itemName">Enter Item Name</label>
+                <input type="" placeholder="Enter a Item Name ..." />
+              </div>
+              <div class="input">
+                <label for="itemDescription"> Item Description</label>
+                <textarea
+                  name="desc"
+                  placeholder="Enter a Item Description ..."
+                  id=""
+                  cols="40"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="btn">
+                <button class="btnClear">CLEAR</button>
+                <button class="btnCreate">CREATE ITEM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardContainer">
+          <div class="ItemListContainer">
+            <h1>Item List :</h1>
+            <div class="ItemListCard">
+              <div class="ItemDetail">
+                <h2></h2>
+                <p>
+                 
+                </p>
+              </div>
+              <div class="ItemFunc">
+                <div class="delete">
+                  <i class="bi bi-trash3"></i>
+                  <p>Delete Item</p>
+                </div>
+                <div class="Edit/Modify">
+                  <i class="bi bi-pencil-square"></i>
+                  <p>Modify Item</p>
+                </div>
+                <div class="MasC">
+                  <i class="bi bi-check-square"></i>
+                  <p>Mark as Completed</p>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+        <div class="cardContainer">
+          <div class="completeContainer">
+            <h1></h1>
+            <div class="ItemListCard">
+              <div class="ItemDetail">
+                <h2></h2>
+                <p>
+                  
+                </p>
+              </div>
+              <div class="ItemFunc">
+                <div class="delete">
+                  <i class="bi bi-trash3"></i>
+                  <p>Delete Item</p>
+                </div>
+                <div class="MasC">
+                  <i class="bi bi-check-square"></i>
+                  <p>Mark as Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="todo.js"></script>
+</html>
